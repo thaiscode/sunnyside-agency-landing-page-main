@@ -60,6 +60,7 @@ ul {
     background: url(./images/mobile/image-header.jpg) center no-repeat;
     background-size: 100%;
     text-align: center;
+    margin: 0 auto;
 }
 
 .header__nav {
@@ -70,6 +71,54 @@ ul {
     padding: 2rem 1.5rem 5rem 1.5rem;
 }
 
+/*Dropdown menu*/
+
+.nav__dropdown {
+    position: absolute;
+    top: 7rem;
+    display: none;
+    width: 88vw;
+    max-height: 50vh;
+    background: var(--white);
+}
+
+.active {
+    display: inline;
+}
+
+/*border dropdown menu*/
+.nav__dropdown::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 22px solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 20px solid var(--white);
+    top: -20px;
+    right: 0%;
+}
+
+.nav__dropdown button {
+    width: 40%;
+    height: 3rem;
+    border: none;
+    border-radius: 50px;
+    background: var(--yellow);
+    font-size: 1rem;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+}
+
+.nav__dropdown li {
+    margin: 2rem 0;
+}
+
+.nav__dropdown li a{
+    color: var(--dark-grayish-blue);
+    font-size: 1.2rem;
+   
+}
 
 .header__title {
     font-size: 2rem;
@@ -123,6 +172,32 @@ ul {
     font-weight: 900;
     text-transform: uppercase;
     text-shadow: 0 0 1px var(--very-dark-desaturated-blue);
+}
+
+.part__learnMoreFirst::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 10px;
+    background-color: var(--yellow);
+    opacity: 0.3;
+    right: 124px;
+    bottom: -35rem;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.part__learnMoreSecond::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 10px;
+    background-color: var(--soft-red);
+    opacity: 0.3;
+    right: 124px;
+    bottom: -76.9rem;
+    border-radius: 30px;
+    z-index: -1;
 }
 
 .details__partFour, .details__partFive{
@@ -257,13 +332,6 @@ ul {
     margin: 1rem;
 }
 
-
-
-
-
-
-
-
 .attribution { 
     font-size: 1rem; 
     text-align: center; 
@@ -278,4 +346,18 @@ ul {
     color: var(--dark-desaturated-cyan); 
 }
 
-  
+@media screen and (min-width: 425px){
+    .part__learnMoreFirst::after {
+        right: 136px;
+        bottom: -33.7rem;
+    }
+
+    .part__learnMoreSecond::after {
+        right: 136px;
+        bottom: -80.5rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+}
