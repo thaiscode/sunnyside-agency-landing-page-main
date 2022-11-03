@@ -4,5 +4,7 @@ let menu = document.querySelector('.header__menu--dropdown')
 menu.addEventListener('click', show)
 
 function show() {
-    dropdown.classList.toggle('active')   
+    if (window.innerWidth < 768) {
+        dropdown.classList.toggle('active') 
+    }
 }

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Front-end mentor challenge">
 
   <link rel="stylesheet" href="style.css">
 
@@ -25,28 +26,28 @@
 
   <header class="header">
     <nav class="header__nav">
-      <img src="images/logo.svg" alt="sunnyside logo">
-      <img src="images/icon-hamburger.svg" alt="" class="header__menu--dropdown">
+      <img src="images/logo.svg" alt="sunnyside logo" class="header__logo">
+      <img src="images/icon-hamburger.svg" alt="hamburguer icon" class="header__menu header__menu--dropdown">
       <ul class="nav__dropdown">
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Projects</a></li>
+        <li><a href="#about" aria-label="redirection to the area about">About</a></li>
+        <li><a href="#services" aria-label="redirection to the area services">Services</a></li>
+        <li><a href="#projects" aria-label="redirection to the area projects">Projects</a></li>
         <li><button>Contact</button></li>
-        
       </ul> 
     </nav>
 
     <h1 class="header__title">We are creatives</h1>
     
-    <img src="images/icon-arrow-down.svg" alt="" class="header__arrow">
+    <img src="images/icon-arrow-down.svg" alt="down arrow " class="header__arrow">
   </header>
 
   <main class="main">
-    <section class="details">
+    <section class="details" id="about">
       <article class="details__part details__partOne">
-        <picture>
-          <source srcset="images/desktop/image-transform.jpg" media="(min-width: 768px)">
-          <img src="images/mobile/image-transform.jpg" alt="">
+        <picture class="details__img details__imgOne">
+          <source srcset="images/mobile/image-transform.jpg" media="(max-width: 767px)">
+          <img src="images/desktop/image-transform.jpg" alt="
+          white egg on a yellow background" loading="lazy">
         </picture>
         
         <div class="part__content">
@@ -54,14 +55,14 @@
           <p class="part__paragraph">
             We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
           </p>
-          <a href="#" class="part__learnMore part__learnMoreFirst">Learn more</a>
+          <a href="#" class="part__learnMore part__learnMoreFirst" aria-label="learn more about marketing of brands">Learn more</a>
         </div>
       </article>
 
       <article class="details__part details__partTwo">
-        <picture>
-          <source srcset="images/desktop/image-stand-out.jpg" media="(min-width: 768px)">
-          <img src="images/mobile/image-stand-out.jpg" alt="">
+        <picture class="details__img">
+          <source srcset="images/mobile/image-stand-out.jpg" media="(max-width: 767px)">
+          <img src="images/desktop/image-stand-out.jpg" alt="white cup on a salmon background" loading="lazy">
         </picture>
 
         <div class="part__content">
@@ -69,21 +70,21 @@
           <p class="part__paragraph">
             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
           </p>
-          <a href="" class="part__learnMore part__learnMoreSecond">Learn more</a>
+          <a href="" class="part__learnMore part__learnMoreSecond" aria-label="learn more about brands in digital places">Learn more</a>
         </div>
       </article>
 
-      <article class="details__part details__partThree">
+      <article class="details__part details__partThree" id="services">
         <section class="details__partFour part__content">
         <!-- image on background-->
         <h1 class="part__title part__titleFour">Graphic design</h1>
-        <p class="part__paragraph part__paragraphFour">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          <p class="part__paragraph part__paragraphFour">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
         </section>
 
         <section class="details__partFive part__content">
           <!-- image on background-->
           <h1 class="part__title part__titleFive ">Photography</h1>
-          <p class="part__paragraph part__paragraphFive">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+            <p class="part__paragraph part__paragraphFive">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
         </section>
       </article>
     </section>
@@ -92,7 +93,7 @@
       <h1 class="testimonials__title">Client testimonials</h1>
         <section class="testimonialsText__section">
           <article class="testimonialsText__box">
-            <img src="images/image-emily.jpg" alt="" class="testimonialsText__img">
+            <img src="images/image-emily.jpg" alt="emily" class="testimonialsText__img" loading="lazy">
             <p class="testimonialsText__paragraph">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
 
               <h1 class="testimonialsText__creditsTitle">Emily R.</h1>
@@ -100,7 +101,7 @@
           </article>
 
           <article class="testimonialsText__box">
-            <img src="images/image-thomas.jpg" alt="" class="testimonialsText__img">
+            <img src="images/image-thomas.jpg" alt="thomas" class="testimonialsText__img" loading="lazy">
             <p class="testimonialsText__paragraph">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
 
               <h1 class="testimonialsText__creditsTitle">Thomas S.</h1>
@@ -108,7 +109,7 @@
           </article>
 
           <article class="testimonialsText__box">
-            <img src="images/image-jennie.jpg" alt="" class="testimonialsText__img">
+            <img src="images/image-jennie.jpg" alt="jennie" class="testimonialsText__img" loading="lazy">
             <p class="testimonialsText__paragraph">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
 
               <h1 class="testimonialsText__creditsTitle">Jennie F.</h1>
@@ -117,50 +118,50 @@
         </section>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="projects">
         <picture>
-          <source srcset="images/desktop/image-gallery-milkbottles.jpg" media="(min-width: 768px)">
-          <img src="images/mobile/image-gallery-milkbottles.jpg" alt="">
+          <source srcset="images/mobile/image-gallery-milkbottles.jpg" media="(max-width: 767px)">
+          <img src="images/desktop/image-gallery-milkbottles.jpg" alt="white bottles with orange caps, on a blue background with white clouds imitating a sky." loading="lazy">
         </picture>
 
         <picture>
-          <source srcset="images/desktop/image-gallery-orange.jpg" media="(min-width: 768px)">
-          <img src="images/mobile/image-gallery-orange.jpg" alt="" >
+          <source srcset="images/mobile/image-gallery-orange.jpg" media="(max-width: 767px)">
+          <img src="images/desktop/image-gallery-orange.jpg" alt="blue bowl, top view with a white liquid and an orange slice in the center on a yellow background" loading="lazy">
         </picture>
 
         <picture>
-          <source srcset="images/desktop/image-gallery-cone.jpg" media="(min-width: 768px)">
-          <img src="images/mobile/image-gallery-cone.jpg" alt="">
+          <source srcset="images/mobile/image-gallery-cone.jpg" media="(max-width: 767px)">
+          <img src="images/desktop/image-gallery-cone.jpg" alt="ice cream cone on a light blue background" loading="lazy">
         </picture>
 
         <picture>
-          <source srcset="images/desktop/image-gallery-sugar-cubes.jpg" media="(min-width: 768px)">
-          <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+          <source srcset="images/mobile/image-gallery-sugar-cubes.jpg" media="(max-width: 767px)">
+          <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="white sugar cubes on a salmon background" loading="lazy">
         </picture>
     </section>
   </main>
 
   <footer class="footer">
-    <img src="images/logo-footer.svg" alt="" class="footer__logo">
+    <img src="images/logo-footer.svg" alt="sunnyside logo" class="footer__logo" loading="lazy">
 
     <nav class="footer__nav">
       <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
+        <li><a href="#about" aria-label="redirection to the area about">About</a></li>
+        <li><a href="#services" aria-label="redirection to the area services">Services</a></li>
+        <li><a href="#projects" aria-label="redirection to the area projects">Projects</a></li>
       </ul>
     </nav>
     
     <section class="footer__social">
-      <img src="images/icon-facebook.svg" alt="">
-      <img src="images/icon-instagram.svg" alt="">
-      <img src="images/icon-twitter.svg" alt="">
-      <img src="images/icon-pinterest.svg" alt="">
+      <a href="" aria-label="facebook link"><i class="fa-brands fa-square-facebook" ></i></a>
+      <a href="" aria-label="instagram link"><i class="fa-brands fa-instagram"></i></a>
+      <a href="" aria-label="twitter link"><i class="fa-brands fa-twitter"></i></a>
+      <a href="" aria-label="pinterest link"><i class="fa-brands fa-pinterest"></i></a>
     </section>
     
     <section class="attribution">
-      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/thaiscode">@thaiscode</a>.</p>
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" aria-label="frontend mentor challenge page">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/thaiscode" aria-label="creator site github pages">@thaiscode</a>.</p>
     </section>
     
   </footer>
