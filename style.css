@@ -74,7 +74,7 @@ ul {
     padding: 3rem 1.5rem;
 }
 
-/*Dropdown menu*/
+/*DROPDOWN MENU*/
 
 .nav__dropdown {
     position: absolute;
@@ -86,11 +86,14 @@ ul {
     background: var(--white);
 }
 
+/* TOGGLE JS*/
+
 .active {
     display: inline;
 }
 
-/*border dropdown menu*/
+/* BORDER DROPDOWN MENU */
+
 .nav__dropdown::after{
     content: "";
     width: 0;
@@ -405,7 +408,7 @@ ul {
         margin-bottom: 3rem;
     }
 
-    /*Dropdown menu unset*/
+    /*DROPDOWN MENU UNSET*/
 
     .header__menu--dropdown{
         display: none;
